@@ -24,7 +24,7 @@ const playMusic = async (message, serverQueue) => {
 	// check for the permissions first
 	const permissions = message.channel.permissionsFor(bot.user).toArray();
 	if (!permissions.includes('SPEAK') || !permissions.includes('CONNECT')) {
-		return message.channel.send('Permission දීපන් ✨හුත්තො✨');
+		return message.channel.send('✨Permission දීපන්✨');
 	}
 
 	// check if the member is joined to a voice channel
